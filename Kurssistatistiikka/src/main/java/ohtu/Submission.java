@@ -5,15 +5,22 @@ import java.util.ArrayList;
 public class Submission {
     private int week;
     private int hours;
-    private ArrayList<Integer> exercises = new ArrayList<Integer>();
+    private ArrayList<Integer> exercises;
     private String course;
 
+    public Submission(int week, int hours, String course) {
+        this.week = week;
+        this.hours = hours;
+        this.course = course;
+        this.exercises = new ArrayList<>();
+    }
+    
     public void setCourse(String course) {
         this.course = course;
     }
     
     public String getCourse() {
-        return course;
+        return this.course;
     }
 
 
@@ -48,8 +55,7 @@ public class Submission {
         for (int exe : exercises) {
             exercise += Integer.toString(exe) + ", ";
         }
-        return "" + this.course + ": viikko " + this.week + ", tuntia " + this.hours + ", " + 
-                this.exercises.size() + " tehtävää: " + exercise;
+        return " aikaa kului " + this.hours + " tuntia, tehtävät: " + exercise;
     }
     
 }

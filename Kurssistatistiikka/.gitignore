@@ -1,0 +1,8 @@
+*.tmp
+/build
+/.nb-gradle/
+/.nb-gradle/
+/build/
+/.gradle
+
+
