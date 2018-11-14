@@ -3,4 +3,6 @@
 /.nb-gradle/
 /Kurssistatistiikka/.nb-gradle/
 /Kurssistatistiikka/build/
+/Kurssistatistiikka/.gradle/
+
 
