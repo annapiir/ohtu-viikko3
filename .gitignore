@@ -1,0 +1,6 @@
+*.tmp
+/build
+/.nb-gradle/
+/Kurssistatistiikka/.nb-gradle/
+/Kurssistatistiikka/build/
+
