@@ -6,11 +6,15 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import ohtu.data_access.UserDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class AuthenticationService {
 
     private UserDao userDao;
-
+    
+    @Autowired
     public AuthenticationService(UserDao userDao) {
         this.userDao = userDao;
     }
@@ -49,16 +53,12 @@ public class AuthenticationService {
         String testPass = password.replaceAll("[*a-zA-Z]", "");
         Pattern usernamePattern = Pattern.compile("^[a-z]*");
         Matcher usernameMatcher = usernamePattern.matcher(username);
-        Pattern passwordPattern = Pattern.compile("^[0-9]*");
-        Matcher passwordMatcher = passwordPattern.matcher(password);
             
         if (!usernameMatcher.find()) {
-            System.out.println("name");
             return true;
         }
         
         if(testPass.length()==0) {
-            System.out.println("pass");
             return true;
         }
         

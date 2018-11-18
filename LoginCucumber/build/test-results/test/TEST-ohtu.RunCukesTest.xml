@@ -8,7 +8,6 @@
     ?[32mWhen ?[0m?[32musername "?[0m?[32m?[1mpikkulintu?[0m?[32m" and password "?[0m?[32m?[1mkoira?[0m?[32m" are entered?[0m ?[90m# Stepdefs.a_username_and_password_are_entered(String,String)?[0m
     ?[32mThen ?[0m?[32msystem will respond with "?[0m?[32m?[1mwrong username or password?[0m?[32m"?[0m  ?[90m# Stepdefs.system_will_respond_with(String)?[0m
 Feature: A new user account can be created if a proper unused username and password are given
-pass
 
   Scenario: can login with successfully generated account     ?[90m# ohtu/new_user.feature:28?[0m
     ?[32mGiven ?[0m?[32muser "?[0m?[32m?[1meero?[0m?[32m" with password "?[0m?[32m?[1msalainen1?[0m?[32m" is created?[0m    ?[90m# Stepdefs.a_user_with_given_password_is_created(String,String)?[0m
@@ -18,7 +17,7 @@ pass
 
 9 Scenarios (?[32m9 passed?[0m)
 28 Steps (?[32m28 passed?[0m)
-0m0.197s
+0m0.163s
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
